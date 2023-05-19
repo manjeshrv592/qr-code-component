@@ -1,0 +1,72 @@
+/* CSS Variables */
+:root {
+  --color-blue: #2c7dfa;
+  --color-blue-shade: #3685ff;
+  --color-dark-navy: #1f314f;
+  --color-grey: #7d889e;
+  --color-light-grey: #d5e1ef;
+  --color-white: #ffffff;
+
+  --font-main: 'Outfit', sans-serif;
+}
+
+/* Basic reset */
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--color-light-grey);
+  font-family: var(--font-main);
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
+.container {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+/* QR Card styling */
+
+.qr-card {
+  width: 100%;
+  max-width: 32rem;
+  padding: 1.6rem;
+  padding-bottom: 0;
+  border-radius: 2rem;
+  background-color: var(--color-white);
+  text-align: center;
+  box-shadow: 0 2.5rem 2.5rem rgba(0, 0, 0, 0.04);
+}
+
+.qr-code {
+  display: inline-block;
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.qr-content {
+  padding: 2.4rem 0.8rem;
+}
+
+.qr-title {
+  color: var(--color-dark-navy);
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.6rem;
+}
+
+.qr-text {
+  color: var(--color-grey);
+  margin-bottom: 1.6rem;
+}
